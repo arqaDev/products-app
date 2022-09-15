@@ -1,0 +1,85 @@
+.cart-item__content {
+    margin-top: 4rem;
+    width: 70%;
+
+    .cart-item__card {
+        background-color: #fcf8f1;
+        height: 270px;
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+        padding: 1rem;
+        display: flex;
+        position: relative;
+    
+        .cart-item__img {
+            width: 192px;
+            height: 241px;
+            
+            & img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    
+        .cart-item__info {
+            display: flex;
+            margin-left: 2rem;
+            width: 100%;
+    
+            .cart-item__title {
+                font-size: 1.5rem;
+                max-width: 401px;
+            }
+    
+            .cart-item__counter {
+                align-items: center;
+                margin: 0 2rem 0 auto;
+    
+                .increment, .decrement {
+                    background-color: transparent;
+                    font-size: 1.5rem;
+                    padding: 0 7px;
+                    cursor: pointer;
+                }
+    
+                .increment:hover, .decrement:hover {
+                    background-color: #222;
+                    color: #fff;
+                }
+    
+                .input-value {
+                    font-size: 1.3rem;
+                    padding: 0 7px;
+                    width: 55px;
+                    margin: 0 6px;
+                    text-align: center;
+                }
+    
+                .input-value::-webkit-outer-spin-button,
+                .input-value::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                }
+    
+            }
+    
+            .cart-item__price {
+                font-size: 1.5rem;
+                margin-right: 3rem;
+            }
+        }
+    
+        .delete-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    
+        .delete-btn:hover {
+            color: rgb(241, 71, 71);
+        }
+    }
+}
+

@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.948449c8.css",
+    "main.js": "/static/js/main.f7c7fcd1.js",
+    "static/media/women_clothes_2.jpeg": "/static/media/women_clothes_2.13a64712a1529ccb0231.jpeg",
+    "static/media/women_clothes_1.jpeg": "/static/media/women_clothes_1.2a723f8578996273fd32.jpeg",
+    "static/media/mens_clothes.jpeg": "/static/media/mens_clothes.70db02734dcc5f7a1c00.jpeg",
+    "static/media/logo.png": "/static/media/logo.ac430c7186fadff3affd.png",
+    "index.html": "/index.html",
+    "main.948449c8.css.map": "/static/css/main.948449c8.css.map",
+    "main.f7c7fcd1.js.map": "/static/js/main.f7c7fcd1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.948449c8.css",
+    "static/js/main.f7c7fcd1.js"
+  ]
+}
