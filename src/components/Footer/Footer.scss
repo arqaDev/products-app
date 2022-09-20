@@ -1,7 +1,11 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets//styles/selectors.scss';
+
+
 .footer__container {
     margin-top: 10%;
     padding: 5% 20%;
-    background-color: #e4e4e4;
+    background-color: $footer-bgc;
 
     .footer__info {
         display: flex;
@@ -34,8 +38,7 @@
 
         & ul {
             width: 190px;
-            display: flex;
-            justify-content: space-between;
+            @extend %elementFullWidth;
 
             & li{
                 list-style-type: none;
@@ -53,12 +56,16 @@
         margin-top: 40px;
         
         & img {
-            height: 81px;
-            width: 81px;
+            @extend %logoSize;
         }
     }
 }
 
+@media (max-width: 900px) {
+    .footer__container {
+        padding: 20px 0;
+    }
+}
 
 
 

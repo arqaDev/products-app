@@ -19,7 +19,7 @@ const MyForm = ({inputPlaceholder}) => {
   }
 
   return (
-    <form onSubmit={addSearch} style={{display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between', position: 'relative', margin: '80px 0'}}>
+    <form onSubmit={addSearch} style={{display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between', position: 'relative', margin: '60px 0'}}>
         <div style={{position: 'relative'}}>
             <input className='searchInput' placeholder={inputPlaceholder} value={state} onChange={(e) => setState(e.target.value)}/>
             <MyButton className='searchButton' type='submit'><BsSearch /></MyButton>

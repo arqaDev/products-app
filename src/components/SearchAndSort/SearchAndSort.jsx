@@ -6,7 +6,7 @@ const SearchAndSort = () => {
 
   return (
     <div>
-        <MyForm inputPlaceholder='Find clothes'/>
+        <MyForm inputPlaceholder='Find product'/>
     </div>
   )
 }

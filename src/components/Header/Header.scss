@@ -1,19 +1,19 @@
+@import '../../assets/styles/selectors.scss';
+@import '../../assets/styles/colors.scss';
+
+
 .header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend %elementFullWidth;
     padding: 10px;
     margin: 0 5%;
     user-select: none;
 
     .logo {
-        width: 81px;
-        height: 81px;
+        @extend %logoSize;
     }
 
     & ul li {
-        color: black;
-        list-style-type: none;
+        color: $text-color;
         display: inline-block;
         margin-left: 40px;
         position: relative;
@@ -22,14 +22,26 @@
             position: absolute;
             top: 0;
             right: -8px;
-            border: 2px solid #222;
+            border: 2px solid $black-color;
             border-radius: 50%;
-            background-color: rgb(248, 63, 63);
+            background-color: $red-color;
             height: 23px;
             width: 23px;
             text-align: center;
             font-size: 1rem;
             font-weight: 600;
         }
+    }
+}
+
+@media (max-width: 700px) {
+    .header-nav {
+        padding: 30px
+    }
+}
+
+@media (max-width: 900px) {
+    .header-nav {
+        padding: 30px;
     }
 }

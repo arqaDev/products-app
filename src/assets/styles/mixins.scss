@@ -1,0 +1,33 @@
+@mixin btn($position, $border, $borderRad: 0px, $bgc ) {
+    position: $position;
+    background-color: $bgc;
+    border: $border;
+    border-radius: $borderRad;
+    cursor: pointer;
+    @content
+};
+
+@mixin dropMenuAfter(
+    $border,
+    $top,
+    $content: '',
+    $position: absolute,
+    $right: 0,
+    $height: 6px,
+    $width: 6px,
+    $z-index: 1000,
+    $transform: rotate(-45deg),
+    $pointer-events: none
+    ) {
+    content: '';
+    position: absolute;
+    border: $border;
+    right: 0;
+    top: $top;
+    height: 6px;
+    width: 6px;
+    z-index: 1000;
+    transform: rotate(-45deg);
+    pointer-events: none;
+    @content
+}

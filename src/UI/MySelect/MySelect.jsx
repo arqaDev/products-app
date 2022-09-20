@@ -6,11 +6,20 @@ import './MySelect.scss'
 
 const MySelect = () => {
   const [isOpened, setIsOpened] = useState(false)
+  const [sortTitle, setSortTitle] = useState('Sort by')
   const dropdownMenu = ['dropdown-menu']
   const dispatch = useDispatch()
 
   function setSortType(sort) {
     dispatch(sortProducts(sort))
+
+    // change select title 
+    if (sort === 'LOWEST_PRICE') {
+      setSortTitle('Lowest Price')
+    } else {
+      setSortTitle('Highest Price')
+    }
+
     setIsOpened(false)
   }
 
@@ -24,7 +33,7 @@ const MySelect = () => {
 
   return (
     <fieldset className='select'>
-      <button className={dropdownMenu.join(' ')} onClick={toggleBtn}>Sort by</button>
+      <button className={dropdownMenu.join(' ')} onClick={toggleBtn}>{sortTitle}</button>
       { isOpened && 
         (
           <div>

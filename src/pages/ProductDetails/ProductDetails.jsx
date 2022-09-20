@@ -18,6 +18,7 @@ const ProductDetails = () => {
   const dispatch = useDispatch()
   const params = useParams()
   
+  // get data with product by id and render to product page
   useEffect(() => {
     const getProduct = async () => {
       const resp = await axios.get(`https://fakestoreapi.com/products/${params.id}`)
@@ -26,10 +27,12 @@ const ProductDetails = () => {
     getProduct()
   }, [params.id, dispatch])
 
+  // add product to cart when you click button "add to cart"
   const addItemToCart = () => {
     dispatch(addToCart(product))
   }
 
+  // add product to favorite
   const addItemToFavorite = (bool) => {
     const active = !bool
     if (active) {
@@ -56,7 +59,8 @@ const ProductDetails = () => {
         <div className="product__price">
           $ {product.price} 
         </div>
-        <div className="product__btns">
+      </div>
+      <div className="product__btns">
           <button className='cart-btn' onClick={() => addItemToCart()}>ADD TO CART</button>
           <button
             className={isActive ? 'favorite-btn active' : 'favorite-btn'}
@@ -64,7 +68,6 @@ const ProductDetails = () => {
               <AiOutlineHeart style={{fontSize: '1.7rem'}}/>
           </button>
         </div>
-      </div>
     </div>
   )
 }

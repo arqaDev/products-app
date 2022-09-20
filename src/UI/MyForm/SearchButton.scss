@@ -1,8 +1,8 @@
+@import '../../assets/styles/mixins.scss';
+
+
 .searchButton {
-    position: absolute;
+    @include btn($position: absolute, $border: none, $bgc: transparent);
     left: 0;
     padding: 8px 10px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
 }

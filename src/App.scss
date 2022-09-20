@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
 * {
     padding: 0;
     margin: 0;
@@ -10,13 +11,20 @@
 
 body {
     background-color: #faf9f8;
+    color: #16191D;
 
     .main {
         padding: 0 5%;
     }
 }
 
+li {
+    list-style-type: none;
+}
 
+a {
+    text-decoration: none;
+}
 
 
 

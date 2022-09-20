@@ -9,6 +9,7 @@ const CartItem = ({product}) => {
     const [count, setCount] = useState(1)
     const dispatch = useDispatch()
 
+    // increment value by 1, if value less than 99
     const increment = () => {
         if (count < 99) {
             const value = Number(count)
@@ -16,12 +17,14 @@ const CartItem = ({product}) => {
         }
     }
 
+    // decrement value by 1, if value more than 1
     const decrement = () => {
         if (count > 1) {
             setCount(count - 1)
         }
     }
 
+    // cange count, if it's less or equel to 99 and more or equel to 0
     const changeValue = (e) => {
         if (e.target.value <= 99 && e.target.value >= 0) {
             setCount(e.target.value)
