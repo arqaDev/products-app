@@ -1,5 +1,5 @@
 import React from 'react' 
-import MyForm from '../../UI/MyForm/MyForm'
+import MyForm from '../UI/MyForm/MyForm'
 
 
 const SearchAndSort = () => {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { BsSearch } from 'react-icons/bs'
 import { useDispatch } from 'react-redux';
-import { findProducts } from '../../features/productsSlice';
+import { findProducts } from '../../../features/productsSlice';
 import MyButton from '../MyButton/MyButton';
 import MySelect from '../MySelect/MySelect';
 import './SearchButton.scss'

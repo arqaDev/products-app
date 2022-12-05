@@ -67,6 +67,19 @@
     }
 }
 
+@media (max-width: 600px) {
+    .footer__container {
+        .footer__info {
+            display: flex;
+            flex-wrap: wrap;
+            .footer-list {
+                padding: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
 
 
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { sortProducts } from '../../features/productsSlice'
+import { sortProducts } from '../../../features/productsSlice'
 import { useDispatch } from 'react-redux/es/exports'
 import './MySelect.scss'
 

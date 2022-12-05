@@ -2,7 +2,8 @@
 @import '../../assets/styles/values.scss';
 
 
-.product-detail {
+.product {
+    position: relative;
     background-color: $primary-color;
     margin: 150px 0;
     padding: 3rem;
@@ -11,7 +12,6 @@
 
     .product__picture {
         width: 300px;
-        min-width: 300px;
         
         & img {
             max-width: $full-width;
@@ -41,7 +41,9 @@
     }
 
     .product__btns {
-        margin-top: 1.7rem;
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
 
         .cart-btn, .favorite-btn {
             height: 45px;
@@ -73,7 +75,7 @@
 }
 
 @media (max-width: 900px) {
-    .product-detail {
+    .product {
         margin: 2rem 4rem;
         padding: 2rem;
         display: block;
@@ -105,12 +107,12 @@
                 font-size: 1.7rem;
             }
         }
+    }
+}
 
-        .product__btns {
-            position: absolute;
-            bottom: 2rem;
-            right: 2rem;
-        }
+@media (max-width: 600px) {
+    .product .product__picture img {
+        height: 300px;
     }
 }
 

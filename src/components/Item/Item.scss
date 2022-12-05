@@ -116,7 +116,7 @@
 
 @media (max-width: 700px) {
     .item__content {
-        width: 280px;
+        width: 230px;
         height: 400px;
 
         .item__image {
@@ -126,6 +126,44 @@
         .item__info {
             margin-top: auto;
             overflow: auto;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .item__content {
+        width: 190px;
+        height: 350px;
+
+        .item__image {
+            height: 250px;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .item__content {
+        width: 160px;
+        height: 340px;
+
+        .item__image {
+            height: 240px;
+        }
+    }
+}
+
+@media (max-width: 415px) {
+    .item__content {
+        width: 120px;
+        height: 280px;
+        .item__image {
+            height: 180px;
+        }
+        .item__info .item__title {
+            font-size: 0.8rem;
+        }
+        .item__info .item__price {
+            font-size: 1rem;
         }
     }
 }

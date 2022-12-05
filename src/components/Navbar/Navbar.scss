@@ -44,6 +44,17 @@
     }
 }
 
+@media (max-width: 500px) {
+    .navbar {
+        & li {
+            padding: 10px;
+            & .nav-link {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
 
 
 

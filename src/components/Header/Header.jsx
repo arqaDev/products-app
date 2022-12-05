@@ -11,27 +11,29 @@ const Header = () => {
   const favorite = useSelector(state => state.products.favorite)
   
   return (
-    <header>
-        <nav className='header-nav'>
-          <Link to={'/'}>
-            <img className='logo' src={logo} alt="logo"/>
-          </Link>
-            <ul>
+    <header className='header'>
+        <div className='header__logo'>
+            <Link to={'/'}>
+                <img className='header__logo-img' src={logo} alt='logo'/>
+            </Link>
+        </div>
+        <nav className='header__nav'>
+            <ul className='header__list menu'>
               <Link to={'/favorite'}>
-                <li className='favorite-icon'><AiOutlineHeart style={{fontSize: '3rem'}}/>
+                <li className='menu__item favorite-icon'><AiOutlineHeart style={{fontSize: '3rem'}}/>
                   {favorite.length > 0
                     &&
-                    <span className='favorite-qty'>
+                    <span className='menu__favorite-qty'>
                       {favorite.length}
                     </span>
                   }
                 </li>
               </Link>
               <Link to={'/cart'}>
-                <li className='cart-icon'><AiOutlineShopping style={{fontSize: '3rem'}}/>
+                <li className='menu__item cart-icon'><AiOutlineShopping style={{fontSize: '3rem'}}/>
                   {cart.length > 0
                     &&
-                    <span className='cart-qty'>
+                    <span className='menu__cart-qty'>
                       {cart.length}
                     </span>
                   }

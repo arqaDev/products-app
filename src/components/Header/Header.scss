@@ -2,23 +2,23 @@
 @import '../../assets/styles/colors.scss';
 
 
-.header-nav {
+.header {
     @extend %elementFullWidth;
     padding: 10px;
     margin: 0 5%;
     user-select: none;
 
-    .logo {
+    .header__logo-img {
         @extend %logoSize;
     }
 
-    & ul li {
+    & .menu__item {
         color: $text-color;
         display: inline-block;
-        margin-left: 40px;
         position: relative;
+        margin-left: 10px;
 
-        .cart-qty, .favorite-qty {
+        .menu__cart-qty, .menu__favorite-qty {
             position: absolute;
             top: 0;
             right: -8px;
@@ -31,17 +31,5 @@
             font-size: 1rem;
             font-weight: 600;
         }
-    }
-}
-
-@media (max-width: 700px) {
-    .header-nav {
-        padding: 30px
-    }
-}
-
-@media (max-width: 900px) {
-    .header-nav {
-        padding: 30px;
     }
 }

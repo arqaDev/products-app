@@ -1,6 +1,6 @@
-@import '../../assets/styles/mixins.scss';
-@import '../../assets/styles/colors.scss';
-@import '../../assets/styles/selectors.scss';
+@import '../../../assets/styles/mixins.scss';
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/selectors.scss';
 
 
 .select {
@@ -67,6 +67,19 @@
 
         .sort-list .sort_value{
             font-size: 1.2rem;
+        }
+    }      
+}
+
+@media (max-width: 500px) {
+    .select {
+        .dropdown-menu {
+            font-size: 1rem;
+            width: 100px;
+        }
+
+        .sort-list .sort_value{
+            font-size: 1rem;
         }
     }      
 }

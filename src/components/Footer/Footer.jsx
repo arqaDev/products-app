@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div className='footer__container'>
         <div className="footer__info">
-            <div className="footer__shop">
+            <div className="footer__shop footer-list">
                 <h3>SHOP</h3>
                 <div className='footer__item'>
                     <a href="#top">Men's clothing</a>
@@ -30,7 +30,7 @@ const Footer = () => {
                     <a href="#top">Jewelery</a>
                 </div>
             </div>
-            <div className="footer__help">
+            <div className="footer__help footer-list">
                 <h3>HELP</h3>
                 <div className='footer__item'>
                     <a href="#top">Customer Service</a>
@@ -45,7 +45,7 @@ const Footer = () => {
                     <a href="#top">Legal & Privecy</a>
                 </div>
             </div>
-            <div className="footer__corporate">
+            <div className="footer__corporate footer-list">
                 <h3>CORPORATE INFO</h3>
                 <div className='footer__item'>
                     <a href="#top">Career at Products Shop</a>

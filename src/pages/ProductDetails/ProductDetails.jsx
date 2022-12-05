@@ -44,31 +44,31 @@ const ProductDetails = () => {
   }
 
   return (
-    <div className='product-detail'>
-      <div className="product__picture">
-        <img src={product.image} alt="item" />
-      </div>
-      <div className="product__info">
-        <h1 className='product__title'>{product.title}</h1>
-        <div className='product__category'>
-          {product.category}
+        <div className='product'>
+            <div className="product__picture">
+                <img src={product.image} alt="item" />
+            </div>
+            <div className="product__info">
+                <h1 className='product__title'>{product.title}</h1>
+                <div className='product__category'>
+                {product.category}
+                </div>
+                <div className='product__description'>
+                {product.description}
+                </div>
+                <div className="product__price">
+                $ {product.price} 
+                </div>
+                <div className="product__btns">
+                    <button className='cart-btn' onClick={() => addItemToCart()}>ADD TO CART</button>
+                    <button
+                        className={isActive ? 'favorite-btn active' : 'favorite-btn'}
+                        onClick={() => addItemToFavorite(isActive)}>
+                        <AiOutlineHeart style={{fontSize: '1.7rem'}}/>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div className='product__description'>
-          {product.description}
-        </div>
-        <div className="product__price">
-          $ {product.price} 
-        </div>
-      </div>
-      <div className="product__btns">
-          <button className='cart-btn' onClick={() => addItemToCart()}>ADD TO CART</button>
-          <button
-            className={isActive ? 'favorite-btn active' : 'favorite-btn'}
-            onClick={() => addItemToFavorite(isActive)}>
-              <AiOutlineHeart style={{fontSize: '1.7rem'}}/>
-          </button>
-        </div>
-    </div>
   )
 }
 
